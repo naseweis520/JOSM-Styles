@@ -1,0 +1,62 @@
+meta {
+	title: "cycleway:lane";
+	description: "Style for displaying 'cycleway:lane'";
+	version: '2018-07-10';
+	author: "nw520";
+}
+
+meta[lang=de] {
+	title: "cycleway:lane";
+	description: "Stil zum Anzeigen von 'cycleway:lane'";
+}
+
+way[cycleway] {
+	cycleway-lane-advisory-color: #F57C00;
+	cycleway-lane-exclusive-color: #FBC02D;
+	cycleway-lane-unkown-color: #D50000;
+	cycleway-lane-width: 1.25;
+}
+
+/*** Left-Hand traffic ***/
+/*** Right-Hand traffic ***/
+way[cycleway=lane][oneway!=yes][oneway!=-1],
+way[cycleway=lane][oneway:bicycle=no],
+way[cycleway=lane][oneway:bicycle=-1],
+way[cycleway:both=lane][oneway!=yes][oneway!=-1],
+way[cycleway:both=lane][oneway:bicycle=no],
+way[cycleway:both=lane][oneway:bicycle=-1],
+way[cycleway:left=lane] {
+	left-casing-color: eval(prop("cycleway-lane-unkown-color"));
+	left-casing-dashes: list(0, 0);
+	left-casing-width: eval(prop("width") + (2*prop("cycleway-lane-width")));
+}
+way[cycleway=lane][oneway:bicycle!=-1],
+way[cycleway:both=lane][oneway:bicycle!=-1],
+way[cycleway:right=lane] {
+	right-casing-color: eval(prop("cycleway-lane-unkown-color"));
+	right-casing-dashes: list(0, 0);
+	right-casing-width: eval(prop("width") + (2*prop("cycleway-lane-width")));
+}
+
+/* cycleway:lane */
+way[cycleway:lane=advisory],
+way[cycleway:left:lane=advisory] {
+	left-casing-color: eval(prop("cycleway-lane-advisory-color"));
+	left-casing-dashes: list(30, 20);
+}
+way[cycleway:lane=advisory],
+way[cycleway:right:lane=advisory] {
+	right-casing-color: eval(prop("cycleway-lane-advisory-color"));
+	right-casing-dashes: list(30, 20);
+}
+
+way[cycleway:lane=exclusive],
+way[cycleway:left:lane=exclusive] {
+	left-casing-color: eval(prop("cycleway-lane-exclusive-color"));
+	left-casing-dashes: list(30, 2);
+}
+way[cycleway:lane=exclusive],
+way[cycleway:right:lane=exclusive] {
+	right-casing-color: eval(prop("cycleway-lane-exclusive-color"));
+	right-casing-dashes: list(30, 2);
+}
