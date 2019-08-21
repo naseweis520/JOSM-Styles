@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="nw520" description="" shortdescription="" version="">
+	<item icon="man_made=street_cabinet@32x.png" name="Street cabinet" type="node,closedway">
+		<key key="man_made" value="street_cabinet" />
+		<text alternative_autocomplete_keys="Amt für Straßenbau und Verkehrsinfrastruktur,Deutsche Post AG,Deutsche Telekom AG,Kabel Deutschland,Post,Stadtwerke Saarbrücken,Tiefbauamt Saarbrücken,VSE NET" key="operator" text="Operator" />
+		<text key="ref" />
+		<text alternative_autocomplete_keys="EK 223,KVz 82,KVz 82 A,KVz 82 BK,KVz 82 PC,KVz 83,KVz 86 BK UP,SiCab" key="model" />
+		<text alternative_autocomplete_keys="Dräco Kabelgarnituren Bergisch-Gladbach,Geyer,Jean Müller,KRONE GmbH,Langmatz,LIC Langmatz GmbH,Quante Fernmeldetechnik Wuppertal,Sichert Berlin,Siemens,Stewing Kunststoffbetrieb GmbH" key="manufacturer" text="Manufacturer" />
+		<multiselect key="street_cabinet" text="Street cabinet" values="cable_tv;gas;postal_service;power;street_lighting;telecom;traffic_control;traffic_monitoring;transport_management;waste;water;water_management" />
+	</item>
+</presets>

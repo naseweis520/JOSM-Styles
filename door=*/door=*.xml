@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="nw520" description="" shortdescription="" version="">
+	<item name="Door" type="node">
+		<combo key="door" text="Door" values="folding,hinged,loadingdock,no,overhead,revolving,sliding,trapdoor,yes" />
+		<text key="door:wings" text="Door:wings" />
+		<combo key="automatic_door" text="Automatic door" values="button,continuous,floor,motion,no,slowdown_button,yes" />
+		<combo key="entrance" text="Entrance" values="emergency,exit,home,main,service,staircase,yes" />
+		<combo key="level" text="Level" />
+		<combo key="wheelchair" text="Wheelchair" values="limited,no,yes" />
+	</item>
+</presets>

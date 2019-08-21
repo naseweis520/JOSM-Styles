@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="nw520" description="" shortdescription="" version="">
+	<item name="Advertising" type="node">
+		<combo key="access" text="Access" values="no,yes" />
+		<combo key="advertising" text="Advertising" values="billboard,board,column,flag,poster_box,screen,sculpture,sign,tarp,totem,wall_painting" />
+		<combo key="animated" text="Animated" values="no,yes" />
+		<combo key="luminous" text="Luminous" values="no,yes" />
+		<multiselect key="message" text="Message" values="commercial;local" />
+		<text default="JCDecaux Deutschland GmbH" key="operator" text="Operator" />
+		<text default="2" key="sides" text="Sides" />
+		<combo key="support" text="Sides" values="ground,pole,street_furniture:transit_shelter,wall_mounted" />
+	</item>
+</presets>
