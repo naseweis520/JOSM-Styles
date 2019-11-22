@@ -5,4 +5,7 @@ all: $(ZIPS)
 $(ZIPS) : %.zip : | %
 	zip $@ $*/*
 
-dist: $(ZIPS)
+.dist: $(ZIPS)
+
+clean:
+	rm $(wildcard *.zip)
