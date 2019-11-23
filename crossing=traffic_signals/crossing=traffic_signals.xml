@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="nw520" description="" shortdescription="" version="">
+	<item name="Traffic signals" type="node">
+		<key key="crossing" value="traffic_signals" />
+		<combo key="flashing_lights" text="Flashing lights" values="no,yes" />
+		<combo key="traffic_signals:arrow" text="Arrow" values="no,yes" />
+		<combo key="traffic_signals:sound" text="Sound" values="no,yes" />
+		<combo key="traffic_signals:vibration" text="Vibration" values="no,yes" />
+	</item>
+</presets>
